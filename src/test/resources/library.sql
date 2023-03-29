@@ -21,3 +21,5 @@ where is_returned=0;
 -- US 03
 select name from book_categories;
 
+select * from books;
+

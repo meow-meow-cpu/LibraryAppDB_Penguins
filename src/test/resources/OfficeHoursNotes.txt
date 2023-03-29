@@ -1,0 +1,13 @@
+JDBC : Java DataBase Connectivity --- API
+
+JAVA  -- JDBC --- Driver (specific to the DBMS)  --- Database Management Systems (Oracle, MySQL etc..)
+
+JDBC allows us to be able to use database information in our test framework (Cucumber BDD Framework)
+
+Steps for JDBC :
+ --- Connect to DB
+ --- Execute a query
+ --- Get the result and manipulate the data
+
+ In order to connect we need a very important piece of information:
+ Connection String: URL, Username, Password
