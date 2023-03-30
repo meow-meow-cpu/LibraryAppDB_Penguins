@@ -25,3 +25,7 @@ select b.name as bookName, author, bc.name as bookCategoryName from books b inne
     book_categories bc on b.book_category_id = bc.id
 where b.name = 'Lord of the Files';
 
+select bc.name, count(*) from book_borrow bb inner join books b on b.id = bb.book_id
+inner join book_categories bc on b.book_category_id = bc.id
+group by bc.name
+order by count(*) desc ;
