@@ -3,6 +3,7 @@ package com.library.steps;
 import com.library.pages.BookPage;
 import com.library.utility.BrowserUtil;
 import com.library.utility.DB_Util;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -41,4 +42,17 @@ public class BookStepDefs {
 
     }
 
+    @When("the user searches for {string} book")
+    public void theUserSearchesForBook(String arg0) {
+        
+    }
+
+    @And("the user clicks edit book button")
+    public void theUserClicksEditBookButton() {
+        
+    }
+
+    @Then("book information must match the Database")
+    public void bookInformationMustMatchTheDatabase() {
+    }
 }

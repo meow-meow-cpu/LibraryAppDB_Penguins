@@ -20,7 +20,7 @@ public class TestJDBC {
 
         Connection connection = DriverManager.getConnection(url,username,password); // step 1
         Statement statement = connection.createStatement(); // step 2
-        ResultSet resultSet = statement.executeQuery("select * from books"); // step 3
+        ResultSet resultSet = statement.executeQuery("select name, isbn, year, author from books"); // step 3
 
         // we have a lot of JDBC methods to manipulate data
        // resultSet.next();  // handles going to next row of the result
