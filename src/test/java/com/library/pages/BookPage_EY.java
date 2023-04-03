@@ -7,7 +7,13 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class BookPage extends BasePage {
+public class BookPage_EY extends BasePage_EY {
+
+    @FindBy(tagName = "h3")
+    public WebElement bookPageHeader;
+
+    @FindBy (id="book_categories")
+    public WebElement bookCategoriesDropdown;
 
     @FindBy(xpath = "//table/tbody/tr")
     public List<WebElement> allRows;
@@ -59,13 +65,6 @@ public class BookPage extends BasePage {
         String xpath = "//td[3][.='" + book + "']/../td/a";
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
-    // search by empty text in Borrowed By field
-    public WebElement borrowBook(){
-        String xpath = "//tbody//td[7][not(text())]/../td/a";
-        return Driver.getDriver().findElement(By.xpath(xpath));
-    }
-
-
 
 
 
